@@ -1,0 +1,27 @@
+{
+  "name": "react-native-link",
+  "version": "1.0.0",
+  "description": "A link component, similar to `<A href` from HTML",
+  "main": "link.js",
+  "dependencies": {
+    "react-native-url-handler": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/650Industries/react-native-link.git"
+  },
+  "keywords": [
+    "react-native",
+    "link"
+  ],
+  "author": "exponent.team@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/650Industries/react-native-link/issues"
+  },
+  "homepage": "https://github.com/650Industries/react-native-link#readme"
+}
