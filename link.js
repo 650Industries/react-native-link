@@ -28,7 +28,7 @@ class Link extends React.Component {
   _linkPressed() {
     if (this.props.source && this.props.source.uri) {
       var url = this.props.source.uri;
-      URLHandler.openURL(url);
+      URLHandler.openUrl(url);
     }
   }
 }
