@@ -14,6 +14,8 @@ var {
 
 var URLHandler = require('react-native-url-handler');
 
+let openUrl = URLHandler.openUrl || URLHandler.openURL || throw new Error("react-native-link can't figure out how to open links with this version of react-native-url-handler! :(");
+
 class Link extends React.Component {
   render() {
     return (
@@ -27,8 +29,8 @@ class Link extends React.Component {
 
   _linkPressed() {
     if (this.props.source && this.props.source.uri) {
-      var url = this.props.source.uri;
-      URLHandler.openUrl(url);
+      let url_ = this.props.source.uri;
+      openUrl(url_);
     }
   }
 }
