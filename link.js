@@ -14,7 +14,10 @@ var {
 
 var URLHandler = require('react-native-url-handler');
 
-let openUrl = URLHandler.openUrl || URLHandler.openURL || throw new Error("react-native-link can't figure out how to open links with this version of react-native-url-handler! :(");
+let openUrl = URLHandler.openUrl || URLHandler.openURL || null;
+if (!openUrl) {
+  throw new Error("react-native-link can't figure out how to open links with this version of react-native-url-handler! :(");
+}
 
 class Link extends React.Component {
   render() {
