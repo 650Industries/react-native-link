@@ -1,6 +1,6 @@
 {
   "name": "react-native-link",
-  "version": "4.0.2",
+  "version": "4.1.0",
   "description": "A link component, similar to `<A href` from HTML",
   "main": "link.js",
   "dependencies": {
